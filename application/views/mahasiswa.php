@@ -26,6 +26,15 @@
               
             </ul>
       </div>
+
+      <div class="navbar-form navbar-right">
+        <?php echo form_open('mahasiswa/search') ?>
+          <input type="text" name="keyword" class="form-control" placeholder="search">
+            <button type="submit" class="btn btn-success">Cari</button>
+
+        <?php echo form_close(); ?>
+      
+      </div>
         <table class="table">
             <tr>
                 <th>NO</th>
