@@ -12,6 +12,7 @@
 
 
     <section class="content">
+          <?php echo $this->session->flashdata('message');?>
         <button class="btn btn-primary" data-toggle="modal" data-target="#exampleModal"><i class="fa fa-plus"></i> Tambah Data Mahasiswa</button>
         <a class="btn btn-success" href="<?php echo base_url('mahasiswa/print'); ?>"><i class="fa fa-print"></i > Print</a>
         
@@ -22,8 +23,7 @@
             </button>
             <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
               <li><a href="<?php echo base_url('mahasiswa/pdf'); ?>"> <i class="fa fa-file"></i > Export PDF</a></li>
-              <li><a href="<?php echo base_url('mahasiswa/excel'); ?>"> <i class="fa fa-file"></i > Export Excel</a></li>
-              
+              <li><a href="<?php echo base_url('mahasiswa/excel'); ?>"> <i class="fa fa-file"></i > Export Excel</a></li>  
             </ul>
       </div>
 
